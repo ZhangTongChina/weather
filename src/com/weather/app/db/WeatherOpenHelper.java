@@ -13,7 +13,7 @@ public class WeatherOpenHelper extends SQLiteOpenHelper {
 	public static final String CREAT_PROVINCE ="create table Province ("
 					+"id integer primary key autoincrement,"
 					+"province_name text,"
-					+" province_code text)"	;	
+					+"province_code text)";	
 	/**
 	 * City±í´´½¨Óï¾ä
 	 */
@@ -27,7 +27,7 @@ public class WeatherOpenHelper extends SQLiteOpenHelper {
 	 */
 	public static final String CREAT_COUNTY ="create table County ("
 					+"id integer primary key autoincrement,"
-					+"county_name text,,"
+					+"county_name text,"
 					+"county_code text,"
 					+"city_id integer)";
 															
