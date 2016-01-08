@@ -102,7 +102,7 @@ public class WeatherActivity extends Activity implements OnClickListener{
 		case R.id.refresh_weather:
 			publishText.setText("同步中...");
 			SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-			String weatherCode = prefs.getString("weather_code", "");
+			String weatherCode = prefs.getString("weatherCode", "");
 			if (!TextUtils.isEmpty(weatherCode)) {
 				queryWeatherInfo(weatherCode);
 			}
