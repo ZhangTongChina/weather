@@ -15,6 +15,13 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         
+        <service 
+            android:name="com.weather.app.service.AutoUpdateService">
+        </service>
+        <receiver 
+            android:name="com.weather.app.receiver.AutoUpdateReceiver">
+        </receiver>
+        
         <activity 
             android:name="com.weather.app.activity.WeatherActivity">
         </activity>
